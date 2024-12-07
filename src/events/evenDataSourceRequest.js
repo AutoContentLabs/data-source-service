@@ -26,7 +26,7 @@ async function evenDataSourceRequest(pair) {
   const providedHeaders = { correlationId: headers.correlationId, traceId: headers.traceId } // track before request
 
   try {
-
+    const response = { "status":"ok"}
     // Send the successful response
     await sendDataSourceResponse({ value: response, headers: providedHeaders });
 
